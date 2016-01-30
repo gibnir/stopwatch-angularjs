@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'digital_dreamregular';
+  src: url("fonts/digitaldream_regular_macroman/DIGITALDREAM-webfont.eot");
+  src: url("fonts/digitaldream_regular_macroman/DIGITALDREAM-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/digitaldream_regular_macroman/DIGITALDREAM-webfont.woff") format("woff"), url("fonts/digitaldream_regular_macroman/DIGITALDREAM-webfont.ttf") format("truetype"), url("fonts/digitaldream_regular_macroman/DIGITALDREAM-webfont.svg#digital_dreamregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Glyphicons_Halflings';
+  src: url("fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.eot");
+  src: url("fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.woff") format("woff"), url("fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.ttf") format("truetype"), url("fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg"); }
+body {
+  background-color: #313131; }
+
+.main-container {
+  margin: 0 auto; }
+
+.container {
+  height: 100px; }
+
+.clock-container {
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #313131;
+  background-color: transparent; }
+
+.clock-container button {
+  background-color: #fff;
+  border-top: 1px solid #dddddd;
+  border-width: 0px; }
+
+.clock-container button:last-child {
+  width: 20%; }
+
+.clock-container button:first-child {
+  width: 80%;
+  border-right: 1px solid #dddddd; }
+
+.clock {
+  color: #84de31;
+  font-size: 25px;
+  padding: 15px;
+  text-align: center;
+  font-family: 'digital_dreamregular', Arial, sans-serif;
+  background-color: #212121;
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000; }
+
+button {
+  float: left; }
+
+table {
+  color: #fff;
+  width: 100%; }
+
+table button {
+  background-color: #ff0000;
+  border-width: 0;
+  color: #ffffff; }
+
+tr td {
+  display: inline-block;
+  padding: 10px 0; }
+
+tr td:nth-child(1) {
+  width: 30%; }
+
+tr td:nth-child(2) {
+  width: 52%; }
+
+tr td:first-child {
+  font-family: 'digital_dreamregular', Arial, sans-serif; }
+
+tr {
+  border-bottom: 1px solid #737373;
+  display: block; }
+
+.icon {
+  display: inline-block;
+  font-family: 'Glyphicons_Halflings'; }
+
+.icon-play:before {
+  content: "\e072"; }
+
+.icon-time:before {
+  content: "\e023"; }
+
+.icon-stop:before {
+  content: "\e074"; }
+
+@media (min-width: 768px) {
+  .main-container {
+    width: 50%; } }
+
+/*# sourceMappingURL=css.css.map */

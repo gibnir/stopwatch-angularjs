@@ -1,0 +1,34 @@
+
+<div class="main-container" ng-controller="stopwatchCtrl">
+	<div class="clock-container">
+		<div class="clock">{{timer}}</div>
+		<div>
+			<button ng-click="toggleTimer()">
+				<span class="icon {{icon}}"></span>
+				<span>{{mode}}</span>
+				
+			</button>
+			<button ng-click="addLapToTable()">
+				<span class="icon icon-time"></span>
+				<span>lap</span>
+			</button>
+		</div>
+	</div>
+	<div>
+		<table>
+			<tbody >
+				<tr ng-repeat="item in timeSchedule.history">
+					<td>{{item[0] | date:'HH:mm:ss'}}</td>
+					<td>
+						{{item[1]}}
+					</td>
+					<td>
+						<button ng-click="removeLapFromTable($index + 1)">remove</button>
+					</td>
+				</tr>
+			</tbody>
+			
+		</table>
+		<button ng-if="clearButtomState" ng-click="clearTable()">clear table</button>
+	</div>  
+</div>
